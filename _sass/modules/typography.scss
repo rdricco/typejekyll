@@ -1,0 +1,85 @@
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+/* Links */
+
+a {
+  color: $typography-color4;
+  text-decoration: none;
+  outline: 0;
+  &:visited {
+    color: $typography-color4;
+    text-decoration: none;
+    outline: 0;
+  }
+  &:hover, &:focus {
+    color: $typography-color3;
+  }
+}
+
+p a {
+  line-height: inherit;
+  &:visited {
+    line-height: inherit;
+  }
+}
+
+/* Visibility */
+
+.hide {
+  display: none !important;
+}
+
+/* Selection Highlighted Text */
+
+::selection, ::-moz-selection {
+  background: $typography-color1;
+  color: $typography-color2;
+  text-shadow: none;
+}
+
+/* Formatting */
+
+em, i, .italic {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+.underline {
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $typography-color1;
+}
+
+/* Colors */
+
+.font-color-primary {
+  color: $typography-color1;
+}
+
+.background-color-primary {
+  background: $typography-color1;
+}
+
+.font-color-secondary {
+  color: $typography-color5;
+}
+
+.font-color-black {
+  color: black;
+}
+
+.font-color-white {
+  color: white;
+}
+
+.background-color-white {
+  background: white;
+}

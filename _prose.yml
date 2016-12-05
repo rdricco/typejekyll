@@ -1,0 +1,193 @@
+prose:
+  siteurl: "http://beta.r-ricco.xyz/"
+  #rooturl: '_posts'
+  media: 'assets/images'
+  ignore:
+    - LICENSE
+    - feed.xml
+    - 404.html
+    - .gitignore
+    - Gemfile
+    - Gemfile.lock
+    - /assets/css
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "text"
+          value: "post"
+      - name: "category"
+        field:
+          element: "text"
+          label: "Category"
+          placeholder: "Enter category"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          value: "CURRENT_DATETIME"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Thumbnail"
+          value: "/assets/images/default/720-720.jpg"
+      - name: "banner"
+        field:
+          element: "text"
+          label: "Post Banner"
+          value: "/assets/images/default/1160-450.jpg"
+      - name: "project_name"
+        field:
+          element: "text"
+          label: "Project Name"
+          placeholder: "project name"
+      - name: "project_client"
+        field:
+          element: "text"
+          label: "Project Client"
+          placeholder: "client name"
+      - name: "project_year"
+        field:
+          element: "text"
+          label: "Project Year"
+          placeholder: "year"
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Comments"
+          value: false
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: true
+    _portfolio:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "text"
+          value: "post"
+      - name: "category"
+        field:
+          element: "text"
+          label: "Category"
+          placeholder: "Enter category"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          value: "CURRENT_DATETIME"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Thumbnail"
+          value: "/assets/images/default/720-720.jpg"
+      - name: "banner"
+        field:
+          element: "text"
+          label: "Post Banner"
+          value: "/assets/images/default/1160-450.jpg"
+      - name: "project_name"
+        field:
+          element: "text"
+          label: "Project Name"
+          placeholder: "project name"
+      - name: "project_client"
+        field:
+          element: "text"
+          label: "Project Client"
+          placeholder: "client name"
+      - name: "project_year"
+        field:
+          element: "text"
+          label: "Project Year"
+          placeholder: "year"
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Comments"
+          value: false
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Published"
+          value: true
+
+    _products:
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Thumbnail"
+          value: "/assets/images/default/720-720.jpg"
+      - name: "item_description"
+        field:
+          element: "text"
+          label: "item_description"
+          placeholder: "Enter your description"
+      - name: "name"
+        field:
+          element: "text"
+          label: "name"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "text"
+          value: "post"
+      - name: "category"
+        field:
+          element: "text"
+          label: "Category"
+          placeholder: "Enter category"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Date"
+          value: "CURRENT_DATETIME"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Thumbnail"
+          value: "/assets/images/default/720-720.jpg"
+      - name: "quantity"
+        field:
+          element: "number"
+          label: "quantity"
+          placeholder: "999"
+      - name: "price"
+        field:
+          element: "number"
+          label: "price"
+          placeholder: "999.00"
+      - name: "markdownprice"
+        field:
+          element: "number"
+          label: "markdownprice"
+          placeholder: "999.00"
+      - name: "shipping"
+        field:
+          element: "number"
+          label: "shipping"
+          placeholder: "999.00"
+      - name: "tax"
+        field:
+          element: "number"
+          label: "tax"
+          placeholder: "999.00"
+      - name: "sku"
+        field:
+          element: "text"
+          label: "sku"
+          placeholder: "SKU000000"

@@ -1,0 +1,55 @@
+<!-- Contact + Map =========================================== -->
+<section id="contact" class="section page">
+	<div class="container">
+		<div class="desktop-6 tablet-12 columns">
+			<h2 class="border-top">{{ site.data.ui-text[site.locale].contact }}</h2>
+			<p class="title-desc">{{ site.data.ui-text[site.locale].findus }}</p>
+
+			<form method="POST" action="http://formspree.io/{{ site.email }}">
+
+				<label for="Name">{{ site.data.ui-text[site.locale].name }} <span class="required">*</span></label>
+				<input name="Name" type="text" id="contactName" size="30" value="" />
+				<br />
+
+				<label for="Email">{{ site.data.ui-text[site.locale].email }} <span class="required">*</span></label>
+				<input name="Email" type="email" id="contactEmail" size="30" value="" />
+				<br />
+
+				<label for="Message">{{ site.data.ui-text[site.locale].message }} <span class="required">*</span></label>
+				<textarea name="Message" id="contactMessage" rows="6" cols="7"></textarea>
+
+				<button type="submit">{{ site.data.ui-text[site.locale].submit }}</button>
+
+			</form>
+
+			<div class="clear"></div>
+		</div><!-- // .desktop-6 -->
+		<div class="desktop-6 tablet-12 nested columns">
+			<div class="desktop-6 tablet-12 columns">
+				<h2 class="border-top">{{ site.data.ui-text[site.locale].where }}</h2>
+				<p class="title-desc">{{ site.where }}</p>
+				
+				<div id="map"></div>
+			</div><!-- // .desktop-6 -->
+			<div class="clear"></div>
+			<div class="desktop-3 tablet-6 mobile-half columns">
+				<div class="box-contact">
+					<h3 class="font-color-primary"><span class="underline">{{ site.data.ui-text[site.locale].address }}</span></h3>
+					<p>
+						{{ site.address }}
+					</p>
+				</div><!-- // .box-contact -->
+			</div><!-- // .desktop-3 -->
+			<div class="desktop-3 tablet-6 mobile-half columns">
+				<div class="box-contact">
+					<h3 class="font-color-primary"><span class="underline">{{ site.data.ui-text[site.locale].email }}</span></h3>
+					<p>
+						<a href="mailto:{{ site.email }}">{{ site.formspree_email }}</a>
+					</p>
+				</div><!-- // .box-contact -->
+			</div><!-- // .desktop-3 -->
+			<div class="clear"></div>
+		</div><!-- // .desktop-6 -->
+	</div><!-- // .container -->
+</section><!-- // section#contact -->
+<div class="clear"></div>

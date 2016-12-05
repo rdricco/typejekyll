@@ -1,0 +1,47 @@
+---
+layout: blog
+title: Blog
+---
+<section id="archive">
+	<div class="container">
+	 {% for post in paginator.posts %}
+			<div class="entry">
+				<div class="desktop-12 columns">
+					<a href="{{ post.url }}" class="permalink">
+						<img src="{{ post.banner | prepend: site.baseurl }}" alt="" />
+					</a><!-- // PERMALINK -->
+				</div><!-- // .desktop-12 -->
+				<div class="desktop-3 tablet-12 columns">
+					<div class="box-meta2">
+						<span class="category"><a href="archive.html">{{ post.category }}</a></span><br />
+						<span class="date">{{ post.date | date: "%d %B %Y" }}</span>
+					</div><!-- // .box-meta -->
+				</div><!-- // .desktop-3 -->
+				<div class="desktop-9 tablet-12 nested columns">
+					<div class="desktop-9 tablet-12 columns">
+	          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+							<div class="box-content">
+	            	{{ post.content }}
+							</div><!-- // .box-content -->
+						</a><!-- // PERMALINK -->
+					</div><!-- // .desktop-9 -->
+					<div class="clear"></div>
+					<div class="box-tags">
+						<div class="desktop-1 tablet-2 columns">
+							<h5>{{ site.data.ui-text[site.locale].tags }}</h5>
+						</div><!-- // .desktop-3 columns -->
+						<div class="desktop-8 tablet-10 columns">
+							<p class="tags">
+								<a href="{{ post.tag }}">{{ post.tag }}</a>
+							</p><!-- // p.tags -->
+						</div><!-- // .desktop-6 -->
+					</div><!-- // .box-tags -->
+				</div><!-- // .desktop-9 .nested -->
+				<div class="clear"></div>
+			</div><!-- // .entry -->
+  	{% endfor %}
+		{% include paginate.html %}
+	</div><!-- // .container -->
+<div class="clear"></div>
+</section><!-- // section#archive -->
+<div class="clear"></div>

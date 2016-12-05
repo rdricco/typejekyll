@@ -1,0 +1,11 @@
+<script async="async" src="https://www.paypalobjects.com/js/external/paypal-button-minicart.min.js?merchant={{ site.paypal_id }}"
+    data-lc="pt_BR"
+    data-button="cart"
+    data-name="{{ page.name }}"
+    data-quantity="{{ page.quantity }}"
+    data-amount="{{ page.price }}"
+    data-currency="{{ site.paypal_currency }}"
+    data-shipping="{{ page.shipping }}"
+    data-tax="{{ page.tax }}"
+    data-env="sandbox"
+></script>

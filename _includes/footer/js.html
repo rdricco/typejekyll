@@ -1,0 +1,16 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="{{ "/assets/js/jQuery.BlackAndWhite.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/modernizr.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/jquery.typeMenu.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/jquery.typeSticky.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/jquery.custom.js" | prepend: site.baseurl }}"></script>
+
+{% if page.iosslider %}
+{% include /footer/js_iosslider.html %}
+{% endif %}
+{% if page.flexslider %}
+{% include /footer/js_flexslider.html %}
+{% endif %}
+{% if page.comments %}
+{% include /footer/js_disqus.html %}
+{% endif %}

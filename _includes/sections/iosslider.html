@@ -1,0 +1,29 @@
+{% if page.iosslider %}
+<div class="iosslider">
+  <div class="containerOuter">
+    <div class="iosContainer">
+      <div class="iosSliderContainer">
+        <div class="iosSlider">
+          <div class="slider">
+            {% for slides in page.iosslider %}
+              <div class="item item{{ forloop.index }}">
+                <img src="{{ slides.islide | prepend: site.baseurl }}" alt="Slider Image"/>
+              </div>
+            {% endfor %}
+          </div><!-- // .slider -->
+        </div><!-- // .iosSlider -->
+      </div><!-- // .iosSliderContainer -->
+    </div><!-- // .iosContainer -->
+  </div><!-- // .containerOuter -->
+  <div class = 'iosThumb2Load'>
+    <div class = 'slider'>
+      {% for slides2 in page.iosslider %}
+        <div class="button-thumb item{{ forloop.index }}">
+          <img src="{{ slides2.islide | prepend: site.baseurl }}" alt="Thumbnail{{ forloop.index }}" />
+        </div>
+      {% endfor %}
+    </div><!-- // .slider -->
+  </div><!-- // .iosThumb2Load -->
+</div>
+<div class="clear"></div>
+{% endif %}

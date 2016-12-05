@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<section id="works" class="page single">
+	<div class="container">
+		<div class="sidebar full-width">
+			<div class="desktop-6 tablet-12 columns">
+					<div class="box-info">
+						<h3 class="border-top">{{ page.title }}</h3>
+						<p class="project-desc">{{ page.project_year }}</p>
+						<p> {{ content }} </p>
+					</div><!-- // .box-info -->
+			</div><!-- // .desktop-6 -->
+			<div class="clear show-under-tablet"></div>
+			<div class="desktop-3 tablet-6 mobile-half columns">
+				<div class="box-info">
+					<h4 class="border-top">{{ site.data.ui-text[site.locale].category }}</h4>
+					<p>
+						{{ page.category }}
+					</p>
+				</div><!-- // .box-info -->
+			</div><!-- // .desktop-3 -->
+			<div class="desktop-3 tablet-6 mobile-half columns">
+				<div class="box-info">
+					<h4 class="border-top">{{ site.data.ui-text[site.locale].client }}</h4>
+					<p><a ref="{{ page.project_clienturl }}" class="permalink">{{ page.project_client }}</a></p>
+				</div><!-- // .box-info -->
+			</div><!-- // .desktop-3 -->
+			<div class="clear"></div>
+		</div><!-- // .sidebar -->
+		<div class="clear"></div>
+		<div class="desktop-12 columns">
+			{% for image in page.project_images %}
+			<img src="{{ image.pimage_path | prepend: site.baseurl }}" alt="{{ image.ptitle }}"/>
+			{% endfor %}
+		</div><!-- // .desktop-12 -->
+		<div class="clear"></div>
+	</div><!-- // .container -->
+</section><!-- // section -->
+<div class="clear"></div>

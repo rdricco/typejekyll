@@ -1,0 +1,34 @@
+---
+# Front matter added to ensure Jekyll processes file.
+---
+
+// Imports
+@import "variables";
+
+@import "cssreset-min";
+
+@import "modules/body";
+@import "modules/typography";
+@import "modules/elements";
+@import "modules/navigation";
+@import "modules/header";
+@import "modules/recentposts";
+@import "modules/aboutpage";
+@import "modules/aboutbox";
+@import "modules/works";
+@import "modules/shop";
+@import "modules/archive";
+@import "modules/contact";
+@import "modules/footer";
+@import "modules/disqus";
+@import "modules/iosslider";
+@import "modules/flexslider";
+
+@import "typegrid";
+
+
+//styles
+
+.wow {
+   visibility: hidden;
+}

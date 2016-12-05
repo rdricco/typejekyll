@@ -1,0 +1,14 @@
+<script src="{{ "/assets/js/jquery.flexslider-min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+$(window).load(function(){
+  $('.flexslider').flexslider({
+    animation: Modernizr.touch ? "slide" : "fade",
+    manualControls: ".flexslider-nav-carousel div.item-nav",
+    selector: ".slides > div",
+    start: function(slider){
+      $('body').removeClass('loading');
+    }
+  });
+});
+
+</script>

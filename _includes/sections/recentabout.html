@@ -1,0 +1,28 @@
+	<!-- Recent + About
+	================================================== -->
+<section id="home-slider">
+	<div class="container">
+		<div class="desktop-6 tablet-12 columns">
+			<div class="box-recent">
+				<h3><a href="/blog/">{{ site.data.ui-text[site.locale].recent }}</a></h3>
+				{% for post in site.posts limit:5 %}
+				<a href="{{ post.url }}" class="permalink">
+					<div class="item">
+						<h4>{{ post.title }}</h4>
+						<p class="meta"><span class="date">{{ post.date | date: "%d-%m-%Y" }}</span> / <span>{{ post.content | strip_html | truncatewords:10}}</span></p>
+					</div><!-- // .item -->
+				</a><!-- // .permalink -->
+				{% endfor %}
+			</div><!-- // .box-recent -->
+		</div><!-- // .desktop-6 -->
+		<div class="desktop-6 tablet-12 columns">
+			<div class="box-about">
+				<h3 class="font-color-primary"><span class="underline">{{ site.data.ui-text[site.locale].about }}</span></h3>
+				<img src="{{ site.miniabout-image | prepend: site.baseurl }}" alt="" />
+				<p class="tagline">{{ site.miniabout-text }}</p><!-- // p.tagline -->
+				<a href="{{ site.miniabout-link }}" class="button full">{{ site.miniabout-buttontext }}</a>
+			</div><!-- // .box-about -->
+		</div><!-- // .desktop-6 -->
+	</div><!-- // .container -->
+</section>
+<div class="clear"></div>

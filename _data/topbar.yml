@@ -1,0 +1,28 @@
+- title: "Sobre"
+  href: "/about/"
+  children:
+    - childtitle: "Home with Flexslider"
+      childhref: "/"
+    - childtitle: "Home with iosSlider"
+      childhref: "/index2.html"
+    - childtitle: "Shop"
+      childhref: "/shop/"
+    - childtitle: "Contato"
+      childhref: "/contact/"
+
+- title: "Portfolio"
+  href: "/portfolio/"
+  children:
+    - childtitle: "Portfolio - Stackgrid (only Images)"
+      childhref: "/portfolio/"
+    - childtitle: "Portfolio - Stackgrid (Label on Bottom)"
+      childhref: "/portfolio2/"
+    - childtitle: "Portfolio - Stackgrid (Label on Top)"
+      childhref: "/portfolio3/"
+    - childtitle: "Portfolio - Three Columms"
+      childhref: "/portfolio4/"
+    - childtitle: "Portfolio - Two Columms"
+      childhref: "/portfolio5/"
+
+- title: "Blog"
+  href: "/blog/"

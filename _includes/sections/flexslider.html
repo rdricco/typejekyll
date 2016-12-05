@@ -1,0 +1,27 @@
+{% if page.flexslider %}
+	<div class="slider">
+		<div class="flexslider">
+			<div class="slides">
+					{% for works in page.flexslider limit:4 %}
+						<div>
+							<img src="{{ works.fslide | prepend: site.baseurl }}">
+						</div>
+					{% endfor %}
+			</div>
+		</div>
+		<div class="flexslider-nav-carousel">
+			<div class="container">
+				{% for items in page.flexslider limit:4 %}
+					<div class="desktop-3 hide-under-tablet columns">
+						<div class="item-nav">
+							<h4>{{ items.fitem }}</h4>
+								<div class="line-separator"></div> <!-- ACRESCENTAR NO PRIMEIRO ITEM -->
+							<span class="category">{{ items.fcategory }}</span>
+						</div><!-- // .item-nav -->
+					</div><!-- // .desktop-3 -->
+				{% endfor %}
+			</div><!-- // .container -->
+		</div><!-- // .flexslider-nav-carousel -->
+	</div>
+		<div class="clear"></div>
+{% endif %}

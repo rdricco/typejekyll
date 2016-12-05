@@ -1,0 +1,31 @@
+<section id="works" class="">
+	<div class="container">
+		{% for post in paginator.posts %}
+		  {% assign loopindex = forloop.index | modulo: 2 %}
+			  {% if loopindex == 2 %}
+					<a href="{{ post.url }}" class="permalink">
+					<div class="desktop-6 columns">
+						<div class="item">
+							<img src="{{ post.image | prepend: site.baseurl }}" alt="" />
+							<h3>{{ post.title }}</h3>
+							<span class="category">{{ post.category }}</span>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-6 -->
+					</a>
+				<div class="clear"></div>
+				{% else %}
+					<a href="{{ post.url }}" class="permalink">
+					<div class="desktop-6 columns">
+						<div class="item">
+							<img src="{{ post.image | prepend: site.baseurl }}" alt="" />
+							<h3>{{ post.title }}</h3>
+							<span class="category">{{ post.category }}</span>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-6 -->
+					</a>
+				{% endif %}
+		{% endfor %}
+		<div class="clear"></div>
+	{% include paginate.html %}
+	</div><!-- // .container -->
+</section><!-- // section#works -->

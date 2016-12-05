@@ -1,0 +1,38 @@
+#about {
+  h2 {
+    padding-top: 30px;
+  }
+  .services {
+    h3 {
+      font-size: 32px;
+      line-height: 42px;
+    }
+    .item {
+      padding: 30px 0;
+    }
+    h4 {
+      font-size: 16px;
+      line-height: 26px;
+      display: inline-block;
+      padding-bottom: 5px;
+      border-bottom: 1px solid $aboutcolor;
+    }
+    p {
+      font-size: 15px;
+      line-height: 28px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #about .services {
+    h4 {
+      margin-top: 40px;
+    }
+    p {
+      font-size: 12px;
+      line-height: 24px;
+    }
+  }
+}

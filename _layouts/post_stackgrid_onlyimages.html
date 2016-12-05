@@ -1,0 +1,19 @@
+---
+layout: blog
+---
+<section id="works" class="stackgrid images-only">
+	{% for project in page.projects %}
+		<div class="item">
+			<a href="{{ project.p_clienturl }}" class="permalink">
+				<div class="remove-line-height">
+					<img src="{{ project.p_thumbnail | prepend: site.baseurl }}" alt="{{ project.p_name }}" />
+				</div><!-- // .remove-line-height -->
+				<div class="box-desc">
+					<h3>{{ project.p_name }}</h3>
+					<span class="category">{{ project.p_client }}</span>
+				</div><!-- // .box-desc -->
+			</a>
+		</div><!-- // .item -->
+	{% endfor %}
+	<div class="clear"></div>
+</section><!-- // section#works -->

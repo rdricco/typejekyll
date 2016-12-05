@@ -1,0 +1,47 @@
+.box-recent {
+  h3 {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 30px 0 20px 0;
+    a {
+      color: $home-color3;
+    }
+  }
+  a.permalink {
+    display: block;
+    border-top: 1px solid $home-color2;
+    h4 {
+      color: $home-color5;
+      font-size: 22px;
+      line-height: 36px;
+      font-weight: normal;
+      margin-bottom: 5px;
+    }
+    &:hover h4 {
+      color: $home-color1;
+    }
+    p.meta {
+      color: $home-color1;
+      span {
+        color: $home-color4;
+      }
+    }
+    &:hover {
+      color: $home-color1;
+      border-top: 1px solid $home-color1;
+      p.meta span {
+        color: $home-color1;
+      }
+    }
+  }
+  .item {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box-recent a.permalink h4 {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,32 @@
+{% if paginator.total_pages > 1 %}
+<div class="nav-pages">
+	{% if paginator.previous_page %}
+	<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Previous" class="link-prev">
+		<div>
+			<span>Previous</span>
+		</div>
+	</a><!-- // .link-prev -->
+	{% else %}
+	<a class="link-prev" class="link-disabled" title="Previous">
+		<div>
+			<span>Previous</span>
+		</div>
+	</a><!-- // .link-prev -->
+	{% endif %}
+
+  {% if paginator.next_page %}
+	<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" title="Next" class="link-next">
+		<div>
+			<span>Next</span>
+		</div>
+	</a><!-- // .link-next -->
+	{% else %}
+	<a class="link-next" class="link-disabled" title="Next">
+		<div>
+			<span>Next</span>
+		</div>
+	</a><!-- // .link-next -->
+	{% endif %}
+	<div class="clear"></div>
+</div><!-- // .nav-pages -->
+{% endif %}

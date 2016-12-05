@@ -1,0 +1,30 @@
+---
+layout: default
+title: Blog Post
+comments: true
+---
+<section id="archive">
+	<div class="container">
+		<div class="entry">
+			<div class="desktop-12 columns">
+				<img src="{{ page.banner | prepend: site.baseurl}}"/>
+			</div><!-- // .desktop-12 -->
+			<div class="desktop-3 tablet-12 columns">
+				<div class="box-meta">
+					<span class="category">{{ page.category }}</span><br/>
+					<span class="date">{{ page.date | date: '%d %b, %Y' }}</span>
+				</div><!-- // .box-meta -->
+			</div><!-- // .desktop-3 -->
+			<div class="desktop-9 tablet-12 columns">
+				<div class="box-content">
+					<a href="{{ page.url }}" class="permalink">
+						<h4>{{ page.title }}</h4>
+					</a><!-- // PERMALINK -->
+						{{ content }}
+				</div><!-- // .box-content -->
+			</div><!-- // .desktop-9 -->
+			<div class="clear"></div>
+		</div><!-- // .entry -->
+	</div><!-- // .container -->
+</section><!-- // section#archive -->
+<div class="clear"></div>

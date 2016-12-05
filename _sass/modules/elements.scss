@@ -1,0 +1,293 @@
+/* Responsive images */
+
+img {
+  max-width: 100%;
+}
+
+/* Used to remove whitespace below an image */
+
+.remove-line-height {
+  line-height: 0;
+}
+
+/* Vertical spacing */
+
+.padding-vertical {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Used frequently to apply a light border on top */
+
+.border-top {
+  border-top: 1px solid $elements-color5;
+  padding-top: 30px;
+}
+
+/* Featured image */
+
+.post img.featured {
+  margin-bottom: 50px;
+}
+
+/* Buttons */
+
+button, .button, a.button {
+  color: $elements-color4;
+  background: $elements-color1;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px 25px 18px 25px;
+  border-bottom: 2px solid $elements-color3;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+button.small, .button.small, a.button.small {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 16px 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+button.full, .button.full, a.button.full {
+  display: block;
+  width: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 30px 40px 26px 40px;
+  border-bottom: 4px solid $elements-color3;
+}
+
+button:hover, .button:hover, a.button:hover {
+  background: $elements-color2;
+}
+
+button.black, .button.black, a.button.black {
+  color: $elements-color4;
+  background: $elements-color7;
+  border-color: $elements-color8;
+}
+
+button.black:hover, .button.black:hover, a.button.black:hover {
+  color: $elements-color1;
+  background: $elements-color8;
+}
+
+/* Forms */
+
+form p, label, legend {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+label {
+  display: block;
+  color: $elements-color8;
+  font-size: 13px;
+  line-height: 23px;
+  margin: 20px 0;
+}
+
+input {
+  &[type=text], &[type=url], &[type=tel], &[type=number], &[type=color], &[type=email], &[type=password] {
+    width: 100%;
+    padding: 20px 25px;
+    color: $elements-color8;
+    margin: 0 0 15px 0;
+    border: 1px solid $elements-color6;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+textarea, select {
+  width: 100%;
+  padding: 20px 25px;
+  color: $elements-color8;
+  margin: 0 0 15px 0;
+  border: 1px solid $elements-color6;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input {
+  &[type=text]:focus, &[type=url]:focus, &[type=tel]:focus, &[type=number]:focus, &[type=color]:focus, &[type=email]:focus, &[type=password]:focus {
+    color: $elements-color1;
+    border: 1px solid $elements-color1;
+  }
+}
+
+textarea:focus, select:focus {
+  color: $elements-color1;
+  border: 1px solid $elements-color1;
+}
+
+/* Placeholder */
+
+::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+  color: $elements-color6;
+}
+
+input {
+  &:-moz-placeholder {
+    color: $elements-color6;
+  }
+  &[type=submit] {
+    border: none;
+  }
+}
+
+/* Input - submit */
+
+/* Required */
+
+span.required {
+  color: $elements-color1;
+}
+
+/* Page elements */
+
+.page p {
+  &.title-desc {
+    color: $elements-color6;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  &.page-desc {
+    color: $elements-color9;
+    font-family: $elements-fontfamilystack;
+    font-size: 34px;
+    line-height: 60px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .page p.page-desc {
+    font-size: 24px;
+    line-height: 42px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .page p.page-desc {
+    font-size: 20px;
+    line-height: 36px;
+  }
+}
+
+/* Sidebar (sticky) */
+
+.sidebar {
+  padding-bottom: 20px;
+  &.sticked {
+    background: $elements-color4;
+    display: none;
+    padding: 0 20px 20px 20px;
+    h3.border-top {
+      border-top: 0;
+    }
+  }
+}
+
+/* Page Navigation */
+
+.nav-pages {
+  font-size: 11px;
+  margin-top: 30px;
+  a {
+    &.link-prev, &.link-next {
+      color: $elements-color10;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      padding: 25px 0;
+      display: block;
+      width: 50%;
+      float: left;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    &.link-prev span, &.link-next span {
+      display: inline-block;
+      padding-bottom: 4px;
+      border-bottom: 1px solid $elements-color10;
+    }
+    &.link-prev div {
+      padding-right: 33.33333333%;
+    }
+    &.link-next div {
+      padding-left: 33.33333333%;
+    }
+    &:hover {
+      color: $elements-color1;
+      span {
+        border-bottom-color: $elements-color1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .nav-pages a.link-prev div {
+    padding-right: 50%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .nav-pages a.link-prev div {
+    padding-right: 0%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .nav-pages a.link-next div {
+    padding-left: 50%;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .nav-pages a.link-next div {
+    padding-left: 0%;
+  }
+}
+
+.container .nav-pages a {
+  &.link-prev, &.link-next {
+    padding: 20px 0;
+  }
+  &.link-prev {
+    text-align: left;
+  }
+  &.link-next {
+    text-align: right;
+  }
+  &.link-center {
+    text-align: center;
+  }
+}

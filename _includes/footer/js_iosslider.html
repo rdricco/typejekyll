@@ -1,0 +1,48 @@
+<script src="{{ "/assets/js/jquery.easing-1.3.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/jquery.iosslider.min.js" | prepend: site.baseurl }}"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+  $('.iosSlider').iosSlider({
+    infiniteSlider: true,
+    snapToChildren: true,
+    snapSlideCenter: true,
+    desktopClickDrag: true,
+    responsiveSlides: false,
+    onSliderLoaded: iosThumb2Load,
+    onSlideChange: iosThumb2Load,
+    stageCSS: {
+      overflow: 'visible'
+    }
+  });
+
+  // for the carousel slider navigation
+  $('.iosThumb2Load .button-thumb').each(function(i) {
+    $(this).bind('click', function() {
+      $('.iosSlider').iosSlider('goToSlide', i+1);
+    });
+
+  });
+
+  $('.iosThumb2Load').iosSlider({
+    desktopClickDrag: true,
+    snapToChildren: true,
+    snapSlideCenter: true,
+    infiniteSlider: true
+  });
+});
+
+
+function iosThumb2Load(args) {
+
+  //currentSlide = args.currentSlideNumber;
+  $('.iosThumb2Load').iosSlider('goToSlide', args.currentSlideNumber);
+
+  /* update indicator */
+  $('.iosThumb2Load .button-thumb').removeClass('selected');
+  $('.iosThumb2Load .button-thumb:eq(' + (args.currentSlideNumber-1) + ')').addClass('selected');
+
+}
+</script>
