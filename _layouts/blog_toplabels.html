@@ -1,0 +1,38 @@
+---
+layout: blog
+title: Blog
+---
+<section id="works">
+	<div class="container">
+		<div class="desktop-12 columns">
+			<div class="border-top"></div>
+		</div>
+			{% for post in paginator.posts %}
+			{% assign loopindex = forloop.index | modulo: 4 %}
+			{% if loopindex == 4 %}
+				<a href="{{ post.url }}" class="permalink">
+			<div class="desktop-3 mobile-half columns">
+				<div class="item first-row">
+					<h3>{{ post.title }}</h3>
+					<span class="category">{{ post.category }}</span>
+					<img src="{{ post.image | prepend: site.baseurl }}" alt="" />
+				</div>
+			</div>
+				</a>
+				<div class="clear"></div>
+			{% else %}
+				<a href="{{ post.url }}" class="permalink">
+				<div class="desktop-3 mobile-half columns">
+					<div class="item first-row">
+						<h3>{{ post.title }}</h3>
+						<span class="category">{{ post.category }}</span>
+						<img src="{{ post.image | prepend: site.baseurl }}" alt="" />
+					</div>
+				</div>
+				</a>
+			{% endif %}
+			{% endfor %}
+		<div class="clear"></div>
+	{% include paginate.html %}
+	</div>
+</section>

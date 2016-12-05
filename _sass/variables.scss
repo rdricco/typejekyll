@@ -1,0 +1,122 @@
+$primary-color: hsl(174, 85%, 53%);
+$secondary-color: #000;
+
+$primaryfontfamily: "Helvetica Neue", "San Francisco", "Roboto", "Segoe UI", "Lucida Grande", Arial, sans-serif;
+$secondaryfontfamily: "Roboto Slab", Georgia, serif;
+
+$layout-color1: $primary-color;
+$layout-color2: darken($layout-color1, 7%);
+$layout-color3: darken($layout-color1, 9%);
+$layout-color12: $secondary-color;
+$layout-color4: lighten($layout-color12, 100%);
+$layout-color5: lighten($layout-color12, 96%);
+$layout-color13: lighten($layout-color12, 93%);
+$layout-color6: lighten($layout-color12, 86%);
+$layout-color14: lighten($layout-color12, 80%);
+$layout-color7: lighten($layout-color12, 66%);
+$layout-color8: lighten($layout-color12, 33%);
+$layout-color9: lighten($layout-color12, 26%);
+$layout-color15: lighten($layout-color12, 20%);
+$layout-color10: lighten($layout-color12, 13%);
+$layout-color11: lighten($layout-color12, 6%);
+
+// default color: #22eedd; #11ddcc #12e5d3
+// $layout-color1: hsl(174, 85%, 53%);
+// $layout-color2: darken($layout-color1, 7%);
+// $layout-color3: darken($layout-color1, 9%);
+// $layout-color4: hsl(0, 0%, 100%);
+// $layout-color5: hsl(0, 0%, 96%);
+// $layout-color13: hsl(0, 0%, 93%);
+// $layout-color6: hsl(0, 0%, 86%);
+// $layout-color14: hsl(0, 0%, 80%);
+// $layout-color7: hsl(0, 0%, 66%);
+// $layout-color8: hsl(0, 0%, 33%);
+// $layout-color9: hsl(0, 0%, 26%);
+// $layout-color15: hsl(0, 0%, 20%);
+// $layout-color10: hsl(0, 0%, 13%);
+// $layout-color11: hsl(0, 0%, 6%);
+// $layout-color12: hsl(0, 0%, 0%);
+
+////////////////////////////////
+$body-fontfamilystack: $primaryfontfamily;
+$body-color: $layout-color11;
+//
+$typography-color1: $layout-color1;
+$typography-color2: $layout-color4;
+$typography-color3: $layout-color12;
+$typography-color4: $layout-color15;
+$typography-color5: hsl(0, 53%, 43%);
+//
+$elements-fontfamilystack: $secondaryfontfamily;
+$elements-color1: $layout-color1;
+$elements-color2: $layout-color2;
+$elements-color3: $layout-color3;
+$elements-color4: $layout-color4;
+$elements-color5: $layout-color5;
+$elements-color6: $layout-color6;
+$elements-color7: $layout-color12;
+$elements-color8: $layout-color11;
+$elements-color9: $layout-color10;
+$elements-color10: $layout-color8;
+//
+$navigation-url0: url(../assets/images/default/menu_open.png);
+$navigation-url1: url(../assets/images/menu_closed.png);
+$navigation-color1: $layout-color1;
+$navigation-color2: $layout-color4;
+$navigation-color3: $layout-color5;
+$navigation-color4: $layout-color6;
+$navigation-color5: $layout-color7;
+$navigation-color6: $layout-color8;
+$navigation-color7: $layout-color9;
+$navigation-color8: $layout-color10;
+$navigation-color9: $layout-color11;
+//
+$header-color: #ccc;
+//
+$home-fontfamilystack: $secondaryfontfamily;
+$home-color1: $layout-color1;
+$home-color2: $layout-color13;
+$home-color3: $layout-color6;
+$home-color4: $layout-color14;
+$home-color5: $layout-color9;
+//
+$aboutcolor: $layout-color11;
+//
+$works-url0: url(../assets/images/default/alpha/bg_alpha60.png);
+$works-color1: $layout-color1;
+$works-color2: $layout-color4;
+$works-color3: $layout-color6;
+$works-color4: $layout-color14;
+$works-color5: $layout-color8;
+$works-color6: $layout-color11;
+//
+$archive-fontfamilystack: $secondaryfontfamily;
+$archive-color1: $layout-color1;
+$archive-color2: $layout-color11;
+$archive-color3: $layout-color15;
+$archive-color4: $layout-color14;
+//
+$contact-color1: $layout-color1;
+$contact-color2: $layout-color4;
+$contact-color3: $layout-color11;
+$contact-color4: #ee3a22;
+//
+$footer-color1: $layout-color1;
+$footer-color2: $layout-color13;
+//
+$iosslider-color0: hsl(0, 0%, 6%);
+//
+$flexslider-color0: $layout-color4;
+$flexslider-color1: #666;
+$flexslider-color2: rgba(0, 0, 0, .5);
+$flexslider-color3: rgba(0, 0, 0, .3);
+$flexslider-color4: #333;
+$flexslider-color5: rgba(0, 0, 0, .7);
+$flexslider-color6: #000;
+$flexslider-color7: rgba(0, 0, 0, .9);
+$flexslider-color8: #111;
+$flexslider-color9: #222;
+$flexslider-color10: #444;
+$flexslider-color11: #777;
+$flexslider-color12: $layout-color1;
+$flexslider-url0: url(../assets/images/default/bg_direction_nav.png);

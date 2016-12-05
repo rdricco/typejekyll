@@ -1,0 +1,192 @@
+# Site Settings
+locale                   : "en_US" # Site Language
+title                    : # Site Name
+description              : # Site description.
+author                   : # Your Name
+tagline                  : # Tagline below name
+logo                     : /assets/images/default/logo.png # Your Logo image
+url                      : # the base hostname & protocol for your site
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : # GitHub username/repo-name
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+
+#Recent posts + miniabout
+miniabout-text           : "Make a memorable experience. Let your brand act in a way that well exceeds users' expectations. See what we can do to help you." # Text from miniabout on index page
+miniabout-image          : "/assets/images/default/720-322.jpg" # Image above the text on minibaout of index page
+miniabout-buttontext     : "what we do" # Text of button
+miniabout-link           : "about.html" # Button URL
+#Contact page information
+location         : "City - Country"
+address          : "Whatever Street, 775 <br/>City/Town <br />(XXX) XXX-XXX-XXX"
+mapcoordinate    : "-23.59,-46.76"
+#Footer information
+email            : "contact@yourdomain.com"
+copyright_url    : "http://yourdomain.com/anyurl"
+dribbble         :
+flickr           :
+facebookurl      :
+foursquare       :
+github           :
+instagram        :
+pinterest        :
+tumblr           :
+twitterurl       :
+vine             :
+youtube          :
+
+#Google maps plugin
+gmaps_APIKEY             :  # your google maps APIKEY
+gmaps_coordinates        :  # your coordinates on map
+
+#Communication plugins
+formspree_email          : #Used on contact form
+disqus_shortname         : #for comments on post pages
+
+#### SHOP CONFIG
+shopname                 : "John Doe Products" # Shop name on sidebar
+shoplogo                 : "/assets/images/default/720-400.png"
+shopdescription          : "John Doe is a German luxury lifestyle brand founded in 1987 by Helmut Bernd. Today, it carries a range of products including clothings, furnitures, kitchenwares, and sports items." # Shop description on sidebar
+shopbuttontext           : "Visit website" # Text on Button
+shopbuttonlink           : "#" # URL for Button
+paypal_id                : # Your Paypal ID
+paypal_currency          : "USD" # Check the paypal formats before change
+
+# Analytics & SEO
+analytics:
+  provider               : "false" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+google_site_verification :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  app_id                 : # used on facebook analytics
+  publisher              : # use only for facebook pages
+  username               : # your personal profile
+og_image                 : "/assets/images/default/470-247.jpg" # Open Graph/Twitter default site image
+# - For specifying social profiles:
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links                  : # An array of links to social media profiles
+    # - https://github.com/rdricco
+
+############ END OF BASIC CONFIGURATION ############
+
+######### BEGIN OF ADVANCED CONFIGURATION ##########
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single_post
+      comments: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      comments: false
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: work_fullwidth
+      comments: false
+  # _products
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: shop-item
+      comments: false
+
+#Collections
+collections:
+  portfolio:
+    output: true
+    title: Portfolio
+    permalink: /portfolio/:path/
+  products:
+    output: true
+    permalink: /products/:path/
+
+gems:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jemoji
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Outputting
+permalink: /:categories/:title/
+paginate: 20 # amount of posts to show
+paginate_path: /blog/page:num/ # change to /page:num/ if you want to use paginate posts on home
+timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+#SASS compression
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - Rakefile
+  - README
+  - tmp
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"

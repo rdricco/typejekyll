@@ -1,0 +1,34 @@
+---
+layout: default
+comments: false
+---
+<section id="works" class="">
+	<div class="container">
+		{% for project in page.projects %}
+		  {% assign loopindex = forloop.index | modulo: 2 %}
+			  {% if loopindex == 2 %}
+					<a href="{{ project.p_clienturl }}" class="permalink">
+					<div class="desktop-6 columns">
+						<div class="item">
+							<img src="{{ project.p_banner | prepend: site.baseurl }}" alt="" />
+							<h3>{{ project.p_name }}</h3>
+							<span class="category">{{ project.p_client }}</span>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-6 -->
+					</a>
+				<div class="clear"></div>
+				{% else %}
+					<a href="{{ project.p_clienturl }}" class="permalink">
+					<div class="desktop-6 columns">
+						<div class="item">
+							<img src="{{ project.p_banner | prepend: site.baseurl }}" alt="" />
+							<h3>{{ project.p_name }}</h3>
+							<span class="category">{{ project.p_category }}</span>
+						</div><!-- // .item -->
+					</div><!-- // .desktop-6 -->
+					</a>
+				{% endif %}
+		{% endfor %}
+		<div class="clear"></div>
+		</div><!-- // .container -->
+</section><!-- // section#works -->

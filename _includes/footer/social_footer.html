@@ -1,0 +1,45 @@
+<section id="footer">
+    <div class="container">
+      <div class="desktop-3 columns">
+        <p>Copyright &copy; <a href="{{ site.copyright_url }}" class="italic">{{ site.author }}</a></p>
+      </div>
+      <div class="desktop-9 columns">
+          <ul id="social">
+              {% if site.facebookurl %}
+              <li><a href="http://www.facebook.com/{{ site.facebookurl }}" class="hoverMe">Facebook</a></li>
+              {% endif %}
+              {% if site.twitterurl %}
+              <li><a href="http://www.twitter.com/{{ site.twitterurl }}" class="hoverMe">Twitter</a></li>
+              {% endif %}
+              {% if site.instagram %}
+              <li><a href="http://www.instagram.com/{{ site.instagram }}" class="hoverMe">Instagram</a></li>
+              {% endif %}
+              {% if site.behance %}
+              <li><a href="http://www.behance.net/{{ site.behance }}" class="hoverMe">Behance</a></li>
+              {% endif %}
+              {% if site.dribbble %}
+              <li><a href="http://dribbble.com/{{ site.dribbble }}" class="hoverMe">Dribbble</a></li>
+              {% endif %}
+              {% if site.flickr %}
+              <li><a href="http://www.flickr.com/photos/{{ site.flickr }}" class="hoverMe">Flickr</a></li>
+              {% endif %}
+              {% if site.pinterest %}
+              <li><a href="http://pinterest.com/{{ site.pinterest }}" class="hoverMe">Pinterest</a></li>
+              {% endif %}
+              {% if site.tumblr %}
+              <li><a href="{{ site.tumblr }}.tumblr.com" class="hoverMe">Tumblr</a></li>
+              {% endif %}
+              {% if site.vine %}
+              <li><a href="http://vine.co/{{ site.vine }}" class="hoverMe">Vine</a></li>
+              {% endif %}
+              {% if site.youtube %}
+              <li><a href="http://www.youtube.com/user/{{ site.youtube }}" class="hoverMe">Youtube</a></li>
+              {% endif %}
+              {% if site.github %}
+              <li><a href="http://github.com/{{ site.github }}" class="hoverMe">Github</a></li>
+              {% endif %}
+          </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+</section>

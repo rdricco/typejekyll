@@ -1,0 +1,49 @@
+  en: &DEFAULT_EN
+    overview: "Overview"
+    toc: "Table of Contents"
+    written_by: "Written by"
+    updated: "Updated"
+    share: "Share on"
+    contact: "Contact"
+    submit: "Submit"
+    category: "Category"
+    tags: "Tags"
+    client: "Client"
+    findus: "Find me here"
+    email: "Email"
+    message: "Message"
+    where: "Where"
+    about: "About"
+    name: "name"
+    recent: "Recent Posts"
+    address: "Address"
+    knowmore: "What We Do"
+    pagination_previous: "Previous"
+    pagination_next: "Next"
+    404text: "Sorry, but the page you were trying to view does not exist --- perhaps you can try searching for it below."
+  en_US:
+    <<: *DEFAULT_EN     # use en for en_US
+  en_UK:
+    <<: *DEFAULT_EN     # use en for en_UK
+
+  pt_BR: &DEFAULT_PT
+    contact: "Contato"
+    submit: "Enviar"
+    updated: "Atualizado"
+    category: "Categoria"
+    tags: "Tags"
+    client: "Cliente"
+    findus: "Encontre-me"
+    email: "Email"
+    message: "Menssagem"
+    where: "Onde"
+    about: "Sobre"
+    name: "Nome"
+    recent: "Posts Recentes"
+    address: "Endereço"
+    knowmore: "Saiba mais"
+    pagination_previous: "Anterior"
+    pagination_next: "Próxima"
+    404text: "Desculpe, parece que a página que você tentou acessar mudou de endereço ou não existe. Que tal usar a busca pra ter certeza? "
+
+---

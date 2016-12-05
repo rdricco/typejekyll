@@ -1,0 +1,23 @@
+<div class="topbar">
+  <div class="container">
+    <!--
+      A custom jQuery plugin called typeMenu handles the menu
+      Add .hide-on-mobile to <li> elements to hide a specific item on mobile viewports
+    -->
+    <ul id="nav" class="full">
+      {% for nav in site.data.topbar %}
+        {% if nav.children != null %}
+          <li>
+            <a href="{{ nav.href }}"><span class="count hide-on-mobile">0{{ forloop.index }}.</span>{{ nav.title }}</a>
+            <ul class="child">
+            {% for child in nav.children %}
+              <li><a href="{{ child.childhref | prepend: site.baseurl }}">{{ child.childtitle }}</a></li>
+            {% endfor %}
+            </ul>
+            {% else %}
+          <li><a href="{{ nav.href | prepend: site.baseurl }}"><span class="count hide-on-mobile">0{{ forloop.index }}.</span>{{ nav.title }}</a>{% endif %}</li>
+      {% endfor %}
+    </ul><!-- // #nav -->
+  </div><!-- // .container -->
+</div><!-- // .topbar -->
+<div class="clear"></div>

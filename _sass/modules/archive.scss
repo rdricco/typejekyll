@@ -1,0 +1,121 @@
+#archive {
+  .entry {
+    margin-bottom: 80px;
+    .box-content {
+      padding-top: 30px;
+    }
+  }
+  .box-meta {
+    padding-top: 30px;
+    span {
+      &.category, &.date {
+        color: $archive-color4;
+        font-size: 12px;
+        line-height: 22px;
+      }
+      &.category {
+        color: $archive-color3;
+        font-weight: bold;
+      }
+    }
+  }
+  .box-meta2 span {
+    &.category, &.date {
+      color: $archive-color4;
+      font-size: 12px;
+      line-height: 22px;
+    }
+    &.category {
+      color: $archive-color3;
+      font-weight: bold;
+    }
+  }
+  .entry {
+    .box-tags {
+      margin-top: 30px;
+    }
+    h4 {
+      font-family: $archive-fontfamilystack;
+      font-size: 26px;
+      line-height: 40px;
+      font-weight: 300;
+      margin-bottom: 28px;
+    }
+    p {
+      color: $archive-color2;
+      margin-top: 40px;
+      font-size: 16px;
+      line-height: 32px;
+    }
+    a:hover {
+      h4 {
+        color: $archive-color1;
+      }
+      p {
+        color: $archive-color2;
+      }
+    }
+    p.tags {
+      font-size: 12px;
+      line-height: 22px;
+      margin-top: 0;
+      a {
+        color: $archive-color2;
+        display: inline-block;
+        padding-bottom: 3px;
+        border-bottom: 1px solid $archive-color2;
+        margin-right: 5px;
+        &:hover {
+          color: $archive-color1;
+          border-bottom: 1px solid $archive-color1;
+        }
+      }
+    }
+    blockquote {
+      margin-bottom: 15px;
+      p {
+        font-family: $archive-fontfamilystack;
+        font-size: 36px;
+        line-height: 60px;
+        font-style: italic;
+        font-weight: 300;
+        margin-bottom: 10px;
+      }
+      footer {
+        color: $archive-color1;
+        font-size: 12px;
+        line-height: 22px;
+        font-style: italic;
+        display: inline-block;
+        margin-top: 10px;
+        padding-top: 4px;
+        border-top: 1px solid $archive-color1;
+      }
+    }
+  }
+}
+
+/* Meta */
+
+/* Tags */
+
+@media screen and (max-width: 959px) {
+  #archive .entry {
+    p {
+      font-size: 13px;
+      line-height: 25px;
+    }
+    .box-content {
+      border-top: none;
+    }
+  }
+}
+
+/* BLockquote */
+
+@media screen and (max-width: 959px) {
+  #archive .entry blockquote p {
+    font-size: 22px;
+    line-height: 40px;
+  }
+}

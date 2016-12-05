@@ -1,0 +1,19 @@
+{% include /header.html %}
+<body>
+  {% if page.flexslider %}
+  {% include /sections/flexslider.html %}
+  {% endif %}
+  {% if page.iosslider %}
+  {% include /sections/iosslider.html %}
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.comments %}
+  {% include /disqus.html %}
+  {% endif %}
+
+  {% include /footer/social_footer.html %}
+  {% include /footer/js.html %}
+</body>
+</html>

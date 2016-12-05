@@ -1,0 +1,25 @@
+{% include /header/head.html %}
+<section id="header">
+{% include /header/topbar.html %}
+{% include /header/logo.html %}
+</section><!-- // #header -->
+<body>
+{% if page.flexslider %}
+{% include /sections/flexslider.html %}
+{% endif %}
+{% if page.iosslider %}
+{% include /sections/iosslider.html %}
+{% endif %}
+
+{{ content }}
+
+{% if page.comments %}
+{% include /disqus.html %}
+{% endif %}
+
+{% include /footer/social_footer.html %}
+{% include /footer/stylesheets.html %}
+{% include /footer/js.html %}
+{% include /footer/js_maps.html %}
+</body>
+</html>

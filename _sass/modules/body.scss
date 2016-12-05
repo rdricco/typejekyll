@@ -1,0 +1,16 @@
+body {
+  color: $body-color;
+  font-family: $body-fontfamilystack;
+  font-size: 14px;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 12px;
+    line-height: 23px;
+  }
+}

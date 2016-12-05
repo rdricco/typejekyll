@@ -1,0 +1,146 @@
+.iosslider {
+  margin-bottom: 50px;
+
+}
+
+.containerOuter {
+  background: #111;
+  height: 357px;
+  overflow: hidden;
+
+}
+
+.iosContainer {
+  position: relative;
+  width: 100%;
+  height: 357px;
+  margin: 0 auto;
+  overflow: visible;
+  .iosSliderContainer {
+    width: 100%;
+    height: 357px;
+    margin: 0;
+    overflow: visible;
+  }
+}
+
+.iosSlider {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: visible;
+  width: 100%;
+  height: 357px;
+  .slider {
+    width: 10000px;
+    height: 100%;
+    .item {
+      float: left;
+      width: 920px;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.iosThumb2Load {
+  height: 93px;
+  background: #111;
+  .slider {
+    width: 100%;
+    height: 100%;
+  }
+  .button-thumb {
+    float: left;
+    margin: 0;
+    width: 240px;
+    height: 93px;
+    opacity: 0.5;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    filter: alpha(opacity = 50);
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .iosSlider .slider .item {
+    width: 1160px;
+  }
+  .containerOuter {
+    height: 450px;
+  }
+  .iosContainer {
+    height: 450px;
+    .iosSliderContainer {
+      height: 450px;
+    }
+  }
+  .iosSlider {
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .iosSlider .slider .item {
+    width: 660px;
+  }
+  .containerOuter {
+    height: 256px;
+  }
+  .iosContainer {
+    height: 256px;
+    .iosSliderContainer {
+      height: 256px;
+    }
+  }
+  .iosSlider {
+    height: 256px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .iosSlider .slider .item {
+    width: 280px;
+  }
+  .containerOuter {
+    height: 109px;
+  }
+  .iosContainer {
+    height: 109px;
+    .iosSliderContainer {
+      height: 109px;
+    }
+  }
+  .iosSlider {
+    height: 109px;
+  }
+  .iosThumb2Load {
+    visibility: hidden;
+    margin: 0;
+    height: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .iosSlider .slider .item {
+    width: 400px;
+  }
+  .containerOuter {
+    height: 150px;
+  }
+  .iosContainer {
+    height: 150px;
+    .iosSliderContainer {
+      height: 150px;
+    }
+  }
+  .iosSlider {
+    height: 150px;
+  }
+  .iosThumb2Load {
+    visibility: hidden;
+    margin: 0;
+    height: 0;
+  }
+}
