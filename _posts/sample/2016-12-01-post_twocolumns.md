@@ -1,6 +1,6 @@
 ---
 ####### Post Configuration:
-title: Two Columns
+title: Multple Works using Two Columns
 layout: post_twocolumns
 category: sample
 comments: true

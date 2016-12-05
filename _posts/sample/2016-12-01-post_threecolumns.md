@@ -1,6 +1,6 @@
 ---
 ####### Post Configuration:
-title: Three Columns
+title: Multple Works using Three Columns
 layout: post_threecolumns
 category: sample
 comments: true

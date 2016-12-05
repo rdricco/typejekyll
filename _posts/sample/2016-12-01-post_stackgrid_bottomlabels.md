@@ -1,6 +1,6 @@
 ---
 ####### Post Configuration:
-title: Stackgrid Bottom Labels
+title: Multple Works using Stackgrid Bottom Labels
 layout: post_stackgrid_bottomlabels
 category: sample
 comments: true

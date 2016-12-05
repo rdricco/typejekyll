@@ -1,5 +1,5 @@
 ---
-title: Work Sidebar Right
+title: Single Work using Sidebar Right
 layout: work_sidebarright
 category: sample
 comments: false

@@ -24,6 +24,7 @@ Typejekyll is a jekyll theme for agencies, designers, photographers and other cr
 * Support for Jekyll's built-in Sass/SCSS preprocessor
 * Shopping page using Paypal buttons
 * Easy customization
+* Ready to use with prose.io as CMS
 
 ## To-do
 

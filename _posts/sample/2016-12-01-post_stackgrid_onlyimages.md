@@ -1,6 +1,6 @@
 ---
 ####### Post Configuration:
-title: Stackgrid Only Images
+title: Multple Works using Stackgrid Only Images
 layout: post_stackgrid_onlyimages
 category: sample
 comments: true

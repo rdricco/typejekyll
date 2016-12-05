@@ -1,6 +1,6 @@
 ---
 ####### Post Configuration:
-title: Work Full Width
+title: Single Work using Full Width
 layout: work_fullwidth
 category: sample
 comments: true

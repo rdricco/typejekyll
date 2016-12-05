@@ -1,6 +1,6 @@
 ---
 ####### Post Configuration:
-title: Single Post
+title: Single Blog Post
 layout: single_post
 category: sample
 comments: true

@@ -1,6 +1,6 @@
 ---
 ####### Post Configuration:
-title: Top Labels
+title: Multple Works using Stackgrid Top Labels
 layout: post_toplabels
 category: sample
 comments: true

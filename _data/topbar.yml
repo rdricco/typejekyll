@@ -4,7 +4,7 @@
     - childtitle: "Home with Flexslider"
       childhref: "/"
     - childtitle: "Home with iosSlider"
-      childhref: "/index2.html"
+      childhref: "/iosslider/"
     - childtitle: "Shop"
       childhref: "/shop/"
     - childtitle: "Contato"
@@ -26,3 +26,4 @@
 
 - title: "Blog"
   href: "/blog/"
+  
