@@ -64,8 +64,3 @@ bundle exec jekyll serve
 
 * Feel free to use it in a personal/commercial project.
 * Please do not resell in template/theme markets!
-
-
-## Author
-
-This theme is a port of [Typefolio](https://github.com/subwaymatch/typefolio) adapted to take advantage of Jekyll + Github Pages features. Feel free to ask me anything about the theme. If you want to know more about the grid system (Typegrid) or the original code please contact subwaymatch at [subwaymatch@gmail.com](mailto:subwaymatch@gmail.com).
